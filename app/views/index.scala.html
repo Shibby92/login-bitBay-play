@@ -1,0 +1,15 @@
+@(message: String)(username: String)(password: String)
+@import helper._
+@main("Welcome to bitBay") {
+@message
+<h4> Username: @username </h4>
+<h4> Password: @password </h4>
+
+@helper.form(routes.Application.recognize()){
+	<input type="text" value="" id="username" name="username"/>
+	<input type="password" value="" id="password" name="password"/>
+	<input type="submit" value="Register" />
+	 
+	
+}
+}
