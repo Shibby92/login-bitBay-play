@@ -4,7 +4,7 @@
 
 # Home page
 GET     /                           controllers.Application.index()
-POST 	/recognize					controllers.Application.recognize()
+GET 	/recognize					controllers.Application.recognize()
 GET 	/sreg						controllers.Application.sReg()
 POST 	/adduser					controllers.Application.addUser()
 GET  	/ureg						controllers.Application.uReg()
